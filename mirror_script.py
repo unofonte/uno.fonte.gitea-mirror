@@ -87,7 +87,7 @@ def add_push_mirror(owner, name, remote_address, dry_run, verify_ssl):
     url = f"{SOURCE_URL}/api/v1/repos/{owner}/{name}/push_mirrors"
     resp = http_post(url, HEADERS_SRC, payload, verify_ssl)
     resp.raise_for_status()
-    print(f"✅ Push mirror created (id={resp.json().get('id')}) for {owner}/{name}")
+    print(f"Push mirror created (id={resp.json().get('id')}) for {owner}/{name}")
     return resp.json()
 
 def get_push_mirrors(owner, name, verify_ssl):
