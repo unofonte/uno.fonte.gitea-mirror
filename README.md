@@ -27,7 +27,7 @@ A Python script for automating Push Mirror replication of repositories between t
 pip install -r requirements.txt
 ```
 
-1. Copy `.env` file:
+2. Copy `.env` file:
 
 ```bash
 cp .env.example .env
